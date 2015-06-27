@@ -1,11 +1,14 @@
-if (isLocked) document.write("Myo is LOCKED")
-else {
-  document.write("Myo is UNLOCKED")
-}
-myo.on('fist', function(edge){
+myMyo.on('fist', function(edge){
     //Edge is true if it's the start of the pose, false if it's the end of the pose
     if(edge){
-         myo.zeroOrientation();
+      myMyo.vibrate('long');
+        enemies.crush();
     }
 });
 alert ('sug');
+
+myMyo.on('thumb_to_pinky', function(edge){
+    myMyo.timer(edge, 500, function(){
+        myMyo.unlock(5000);
+    })
+});

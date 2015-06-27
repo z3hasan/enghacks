@@ -12,12 +12,12 @@
 		<style>
 			body{
 				background-color : #FFFFFF;
-				color : #84FFF1;
+				color : #000000;
 				font-family: 'Open Sans', sans-serif;
 			}
 			.plot{
-				width:300px;
-				height:800px;
+				width:600px;
+				height:400px;
 				display : inline-block;
 			}
 
@@ -82,7 +82,7 @@
 			};
 			graph.plot = $.plot("#" + elementId, graph.getGraphData(), {
 				series: {shadowSize: 0},
-				colors: [ '#84FFF1', '#FFF38A', '#FF4B23', '#00797F'],
+				colors: [ '#9F6081', '#FF0066', '#50DBF3', '#50CF7F'],
 				xaxis: {
 					min : -range,
 					max : range
@@ -96,7 +96,7 @@
 					backgroundOpacity : 0,
 				},
 				grid : {
-					borderColor : "#427F78"
+					borderColor : "#000000"
 				}
 			});
 			return graph;

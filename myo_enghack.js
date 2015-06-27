@@ -1,4 +1,4 @@
-if (myo.isLocked) document.write("Myo is LOCKED")
+if (isLocked) document.write("Myo is LOCKED")
 else {
   document.write("Myo is UNLOCKED")
 }

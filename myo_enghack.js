@@ -9,3 +9,4 @@ myo.on('fist', function(edge){
     }
 });
 alert ('sug');
+document.write(myo.orientationOffset)

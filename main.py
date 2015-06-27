@@ -1,2 +1,5 @@
+import os
 import myo as libmyo
-libmyo.init('sdk')
+libmyo.init()
+
+print ("hello")

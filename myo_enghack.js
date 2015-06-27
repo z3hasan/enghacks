@@ -8,5 +8,5 @@ myo.on('fist', function(edge){
          myo.zeroOrientation();
     }
 });
-alert ('sug');
 document.write(myo.orientationOffset)
+alert ('sug');

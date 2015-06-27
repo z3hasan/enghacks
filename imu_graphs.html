@@ -91,19 +91,19 @@
 			orientationGraph.addData(data.orientation);
 		})
 	         
-	        myMyo.on('fist', function(edge){
+	        myo.on('fist', function(edge){
                 if(!edge) return;
                 console.log('Hello Myo!');
-                myMyo.vibrate();
+                myo.vibrate();
  
 	         
-                myMyo.on('fist', function(edge){
+                myo.on('fist', function(edge){
                 //Edge is true if it's the start of the pose, false if it's the end of the pose
                 if(edge){
                 myo.zeroOrientation();
                 console.log('You may start your exercise');
                 document.write('You may start your exercise');
-                myMyo.vibrate('short');
+                myo.vibrate('short');
                 }
                 });
 		//

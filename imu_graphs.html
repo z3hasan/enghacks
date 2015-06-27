@@ -108,6 +108,15 @@
 		myo.on('imu', function(data){
 			orientationGraph.addData(data.orientation);
 		})
+	
+                myo.on('fist', function(edge){
+                //Edge is true if it's the start of the pose, false if it's the end of the pose
+                if(edge){
+                myo.zeroOrientation();
+                console.log('You may start your exercise');
+                myMyo.vibrate('short');
+                }
+                });
 		//
 		// myo.on('*', function(event, data){
 		// 	if(!_.contains(['imu', 'orientation', 'position', 'pose', 'rest'], event)){
